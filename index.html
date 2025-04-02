@@ -10,13 +10,10 @@
             text-align: center;
             font-family: 'Comic Sans MS', cursive, sans-serif;
             color: #fff;
-            overflow-y: auto;
-            margin: 0;
-            padding: 0;
-            height: 100%;
+            overflow: hidden;
         }
         h1 {
-            font-size: 4rem;
+            font-size: 3.5rem;
             margin-top: 50px;
             text-shadow: 3px 3px 6px #ff6b81;
             animation: bounce 2s infinite;
@@ -34,18 +31,14 @@
             color: #ff4081;
             font-weight: bold;
             animation: fadeIn 3s ease-in-out;
-            max-width: 90%;
-            margin: 20px auto;
-            word-wrap: break-word;
-            text-align: center;
         }
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
         .cake {
-            width: 30vw;
-            height: 30vw;
+            width: 200px;
+            height: 200px;
             background: #ffcc80;
             border-radius: 50% 50% 0 0;
             position: relative;
@@ -58,29 +51,29 @@
             100% { transform: scale(1.1); }
         }
         .candle {
-            width: 2vw;
-            height: 8vw;
+            width: 10px;
+            height: 40px;
             background: red;
             position: absolute;
-            top: -10%;
+            top: -40px;
         }
         .candle:nth-child(1) {
             left: 45%;
         }
         .candle:nth-child(2) {
             left: 20%;
-            top: -15%;
+            top: -25px;
         }
         .candle:nth-child(3) {
             left: 70%;
-            top: -15%;
+            top: -25px;
         }
         .flame {
-            width: 4vw;
-            height: 5vw;
+            width: 15px;
+            height: 20px;
             background: orange;
             position: absolute;
-            top: -25%;
+            top: -20px;
             left: 50%;
             transform: translateX(-50%);
             border-radius: 50%;
@@ -98,48 +91,6 @@
             0% { transform: translateY(0px); }
             50% { transform: translateY(-20px); }
             100% { transform: translateY(0px); }
-        }
-
-        @media screen and (max-width: 768px) {
-            h1 {
-                font-size: 2.5rem;
-            }
-            .cake {
-                width: 40vw;
-                height: 40vw;
-            }
-            .candle {
-                width: 5vw;
-                height: 12vw;
-            }
-            .flame {
-                width: 10vw;
-                height: 12vw;
-            }
-            .message {
-                font-size: 1.5rem;
-            }
-        }
-
-        @media screen and (max-width: 480px) {
-            h1 {
-                font-size: 2rem;
-            }
-            .cake {
-                width: 50vw;
-                height: 50vw;
-            }
-            .candle {
-                width: 7vw;
-                height: 14vw;
-            }
-            .flame {
-                width: 12vw;
-                height: 15vw;
-            }
-            .message {
-                font-size: 1.2rem;
-            }
         }
     </style>
 </head>
