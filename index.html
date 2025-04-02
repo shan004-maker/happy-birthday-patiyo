@@ -11,9 +11,11 @@
             font-family: 'Comic Sans MS', cursive, sans-serif;
             color: #fff;
             overflow: hidden;
+            margin: 0;
+            padding: 0;
         }
         h1 {
-            font-size: 3.5rem;
+            font-size: 4rem;
             margin-top: 50px;
             text-shadow: 3px 3px 6px #ff6b81;
             animation: bounce 2s infinite;
@@ -31,14 +33,16 @@
             color: #ff4081;
             font-weight: bold;
             animation: fadeIn 3s ease-in-out;
+            max-width: 90%;
+            margin: 20px auto;
         }
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
         .cake {
-            width: 200px;
-            height: 200px;
+            width: 30vw;
+            height: 30vw;
             background: #ffcc80;
             border-radius: 50% 50% 0 0;
             position: relative;
@@ -51,29 +55,29 @@
             100% { transform: scale(1.1); }
         }
         .candle {
-            width: 10px;
-            height: 40px;
+            width: 2vw;
+            height: 8vw;
             background: red;
             position: absolute;
-            top: -40px;
+            top: -10%;
         }
         .candle:nth-child(1) {
             left: 45%;
         }
         .candle:nth-child(2) {
             left: 20%;
-            top: -25px;
+            top: -15%;
         }
         .candle:nth-child(3) {
             left: 70%;
-            top: -25px;
+            top: -15%;
         }
         .flame {
-            width: 15px;
-            height: 20px;
+            width: 4vw;
+            height: 5vw;
             background: orange;
             position: absolute;
-            top: -20px;
+            top: -25%;
             left: 50%;
             transform: translateX(-50%);
             border-radius: 50%;
@@ -91,6 +95,48 @@
             0% { transform: translateY(0px); }
             50% { transform: translateY(-20px); }
             100% { transform: translateY(0px); }
+        }
+
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .cake {
+                width: 40vw;
+                height: 40vw;
+            }
+            .candle {
+                width: 5vw;
+                height: 12vw;
+            }
+            .flame {
+                width: 10vw;
+                height: 12vw;
+            }
+            .message {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .cake {
+                width: 50vw;
+                height: 50vw;
+            }
+            .candle {
+                width: 7vw;
+                height: 14vw;
+            }
+            .flame {
+                width: 12vw;
+                height: 15vw;
+            }
+            .message {
+                font-size: 1.2rem;
+            }
         }
     </style>
 </head>
